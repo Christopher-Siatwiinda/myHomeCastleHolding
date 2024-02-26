@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+        .container {
+          margin-bottom: 20px; /* Adjust the value as needed */
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+  
+      
+      <!-- Custom styles for this template -->
+      <link href="navbar-top-fixed.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">WAFCON QUiZ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mtn&airteldeposit.html">Deposits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Quiz CMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <section class="container p-3 mt-3 shadow-lg">
+        <div class="row">
+            <div class="col-lg-6">
+                <section class="shadow-lg p-2 rounded">
+                    <div style="background-color: red; padding: 20px; color: black;" class="rounded">
+                        <h2>Airtel Deposit</h2>
+                    </div>
+                    <div>
+                        <form>
+                            <div id="myOptions" class="mt-4 mb-3">
+                                <div class="mb-3">
+                                    <div class="d-flex">
+                                        <strong class="d-flex align-items-center" style="margin-right: 15px;"><label for="options" class="form-label">Mobile:</label></strong>
+                                        <input id="airtelDig" type="text" pattern="[0-9]{7}" style="width: 70px;" value="+260" readonly  class="form-control">
+                                        <select id="selectAir" type="text" pattern="[0-1]{1}"  style="width: fit-content; margin-left: 10px; margin-right: 10px;" class="form-select" aria-label="select Question Type">
+                                            <option value="1">9</option>
+                                            <option value="2">7</option>
+                                        </select>
+                                        <input id="airtelDig" type="text" pattern="[0-9]{1}" style="width: 40px; margin-right: 10px;" value="7" readonly  class="form-control">
+                                        <input id="airtelDig" type="text" pattern="[0-9]{7}"  class="form-control">
+                                    </div>
+                                </div>
+            
+                                <div class="mb-3">
+                                    <div class="d-flex">
+                                        <strong class="d-flex align-items-center" style="margin-right: 15px;"><label for="options" class="form-label">TId:</label></strong>
+                                        <strong class="d-flex align-items-center"><label id="tidPref" for="options" class="form-label"></label></strong>
+                                        <input id="airtelDig" type="text" pattern="[A-Z0-9]{7}" style="width: 90px;" value="MP2402" readonly  class="form-control">
+                                        <input id="tidDate" type="text" pattern="[0-9]{2}" style="width: 70px;" class="form-control" id="optionC">
+                                        <strong class="d-flex align-items-center"><label id="tidDot" for="options" class="form-label">.</label></strong>
+                                        <input id="tidForDig" type="text" pattern="[0-9]{4}" style="width: 100px;" class="form-control" id="optionC">
+                                        <strong class="d-flex align-items-center"><label for="options" class="form-label">.</label></strong>
+                                        <input id="tidLastDig" type="text" pattern="[A-Z][0-9]{5}" placeholder="Start with capital letter, eg. H" class="form-control" id="optionC">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="d-flex">
+                                        <strong class="d-flex align-items-center" style="margin-right: 15px;"><label for="options" class="form-label">Amount:</label></strong>
+                                        <strong class="d-flex align-items-center" style="margin-right: 10px;" ><label for="options" class="form-label">ZMW</label></strong>
+                                        <input type="text" pattern="[0-9.]{*}" class="form-control" id="amount">
+                                        <select type="text" pattern="[A-Z]{1}"  style="width: fit-content; margin-left: 10px; margin-right: 10px;" id="select"  onChange="" class="form-select" aria-label="select Question Type">
+                                            <option value="1">D</option>
+                                            <option value="2">K</option>
+                                            <option value="3">P</option>
+                                        </select>
+                                    </div>
+                                </div>
+                              </div>
+                              <div id="resultsAirtel"></div>
+                            <button onclick="airtelDeposity()" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="shadow-lg p-2 rounded">
+                    <div style="background-color: yellow; padding: 20px; color: black;" class="rounded">
+                        <h2>MTN Deposit</h2>
+                    </div>
+                    <div>
+                        <form>
+                            <div id="myOptions" class="mt-4 mb-3">
+                                <div class="mb-3">
+                                    <div class="d-flex">
+                                        <strong class="d-flex align-items-center" style="margin-right: 15px;"><label for="options" class="form-label">Mobile:</label></strong>
+                                        <input id="airtelDig" type="text" pattern="[0-9]{7}" style="width: 70px;" value="+260" readonly  class="form-control">
+                                        <select type="text" pattern="[0-1]{1}" style="width: fit-content; margin-left: 10px; margin-right: 10px;" id="select"  onChange="" class="form-select" aria-label="select Question Type">
+                                            <option value="1">9</option>
+                                            <option value="2">7</option>
+                                        </select>
+                                        <input id="airtelDig" type="text" pattern="[0-9]{1}" style="width: 40px; margin-right: 10px;" value="6" readonly  class="form-control">
+                                        <input type="text" pattern="[0-9]{7}" class="form-control" id="optionC">
+                                    </div>
+                                </div>
+            
+                                <div class="mb-3">
+                                    <div class="d-flex">
+                                        <strong class="d-flex align-items-center" style="margin-right: 15px;"><label for="options" class="form-label">TId:</label></strong>
+                                        <input type="text" pattern="[0-9]{10}" class="form-control" id="optionC">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="d-flex">
+                                        <strong class="d-flex align-items-center" style="margin-right: 15px;"><label for="options" class="form-label">Amount:</label></strong>
+                                        <strong class="d-flex align-items-center" style="margin-right: 10px;" ><label for="options" class="form-label">ZMW</label></strong>
+                                        <input type="text" pattern="[0-9.]{*}" class="form-control" id="optionC">
+                                        <select type="text" pattern="[A-Z]{1}"  style="width: fit-content; margin-left: 10px; margin-right: 10px;" id="select"  onChange="" class="form-select" aria-label="select Question Type">
+                                            <option value="1">D</option>
+                                            <option value="2">K</option>
+                                            <option value="3">P</option>
+                                        </select>
+                                    </div>
+                                </div>
+                              </div>
+                              <div><p id="resultsMTN"></p></div>
+                            <button onclick="mtnDeposity()" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <script>
+      
+        function airtelDeposity(){
+            
+            //mobile number
+            let myText =document.getElementById("prefix");
+            let pref = (myText.innerText || myText.textContent);
+
+            let e = document.getElementById("selectAir");
+            let value = e.value;
+            let text = e.options[e.selectedIndex].text;
+
+            let code =document.getElementById("airtelCode");
+            let finalCode = (code.innerText || code.textContent);
+
+            let inputDig = document.getElementById("airtelDig").value;
+            const mobileNum = pref+text+finalCode+inputDig;
+            console.log(mobileNum);
+
+            // Transaction id
+            let tidPref =document.getElementById("tidPref");
+            let tidPr = (tidPref.innerText || tidPref.textContent);
+
+            let tidDate = document.getElementById("tidDate").value;
+            let tidDot = document.getElementById("tidDot");
+            let tidFDot = (tidDot.innerText || tidDot.textContent);
+            let tidForDig= document.getElementById("tidForDig").value;
+            let tidLastDig = document.getElementById("tidLastDig").value;
+
+            const tid = tidPr+tidDate+tidFDot+tidForDig+tidFDot+tidLastDig;
+            console.log(tid);
+
+            // Amount and other
+            let amount = document.getElementById("amount").value;
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

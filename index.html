@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Fixed top navbar example · Bootstrap v5.0</title>
+
+   
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .container {
+        margin-bottom: 20px; /* Adjust the value as needed */
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar-top-fixed.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">WAFCON QUiZ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mtn&airteldeposit.html">Deposits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Quiz CMS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <!--<div class="bg-white shadow-lg p-5 rounded">
+    <h1>Navbar example</h1>
+    <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
+    <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>
+  </div>-->
+  <div class="bg-white shadow-lg rounded">
+    <img style="width: 100%; height: 100%;" class="rounded" src="./profile_1.png" alt="wafcon Design"/>
+  </div>
+
+  <div class="row align-items-center mt-2">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+      <!-- Bg -->
+     <div class="card px-4 pt-2 pb-4 shadow-lg rounded-top-0 rounded-bottom-0 rounded-bottom-md-2 ">
+      <div class="d-flex align-items-end justify-content-between  ">
+        <div class="d-flex align-items-center">
+          <div class="lh-1">
+            <h2 class="mb-0">Stella Flores
+              <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" data-placement="top" aria-label="Beginner" data-bs-original-title="Beginner">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
+                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+                </svg>
+              </a>
+            </h2>
+            <p class=" mb-0 d-block">@stellaflores</p>
+          </div>
+        </div>
+        <div>
+          <a href="profile-edit.html" class="btn btn-primary btn-sm d-none d-md-block">Account
+            Setting</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="height: fit-content;" class="row mt-0 mt-md-4">
+    <div  class="col-lg-3 col-md-4 col-12 ">
+      <!-- Side navbar -->
+      <nav class="navbar navbar-expand-md navbar-light shadow-lg bg-white mb-4 mb-lg-0 sidenav p-2 rounded">
+        <!-- Menu -->
+        <a class="d-xl-none d-lg-none d-md-none text-inherit fw-bold" href="#">Menu</a>
+        <!-- Button -->
+        <button class="navbar-toggler d-md-none icon-shape icon-sm rounded bg-primary text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidenav" aria-controls="sidenav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fe fe-menu"></span>
+        </button>
+        <!-- Collapse navbar -->
+        <div class="navbar-collapse collapse" id="sidenav" style="">
+          <div class="navbar-nav flex-column">
+            <span class="navbar-header">Subscription</span>
+            <ul class="list-unstyled ms-n2 mb-4">
+              <!-- Nav item -->
+              <li class="nav-item ">
+                <a class="nav-link" href="student-subscriptions.html"><i class="fe fe-calendar nav-icon"></i>My
+                  Subscriptions
+                </a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="billing-info.html"><i class="fe fe-credit-card nav-icon"></i>Billing
+                  Info</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="payment-method.html"><i class="fe fe-credit-card nav-icon"></i>Payment</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="invoice.html"><i class="fe fe-clipboard nav-icon"></i>Invoice</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item active">
+                <a class="nav-link" href="student-quiz.html"><i class="fe fe-help-circle nav-icon"></i>My Quiz
+                  Attempt</a>
+              </li>
+            </ul>
+            <!-- Navbar header -->
+            <span class="navbar-header">Account Settings</span>
+            <ul class="list-unstyled ms-n2 mb-0">
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="profile-edit.html"><i class="fe fe-settings nav-icon"></i>Edit
+                  Profile</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="security.html"><i class="fe fe-user nav-icon"></i>Security</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="social-profile.html"><i class="fe fe-refresh-cw nav-icon"></i>Social
+                  Profiles</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="notifications.html"><i class="fe fe-bell nav-icon"></i>Notifications</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="profile-privacy.html"><i class="fe fe-lock nav-icon"></i>Profile
+                  Privacy</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="delete-profile.html"><i class="fe fe-trash nav-icon"></i>Delete
+                  Profile</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link " href="linked-accounts.html"><i class="fe fe-user nav-icon"></i>Linked
+                  Accounts</a>
+              </li>
+              <!-- Nav item -->
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"><i class="fe fe-power nav-icon"></i>Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-lg-9 col-md-8 col-12" style="padding-bottom: 20px;height: fit-content;">
+      <div id="courseForm" class="bs-stepper shadow-lg bg-white" style="height: fit-content;">
+
+        <!-- Stepper Button -->
+
+        <!-- Stepper content -->
+        <div class="bs-stepper-content">
+          <div class=" " role="tablist">
+            <div class="step active" data-target="#test-l-1">
+              <div class="step-trigger visually-hidden" role="tab" id="courseFormtrigger1" aria-controls="test-l-1" aria-selected="true">
+
+              </div>
+            </div>
+
+            <div class="step" data-target="#test-l-2">
+              <button type="button" class="step-trigger visually-hidden" role="tab" id="courseFormtrigger2" aria-controls="test-l-2" aria-selected="false">
+
+              </button>
+            </div>
+
+            <div class="step" data-target="#test-l-3">
+              <button type="button" class="step-trigger visually-hidden" role="tab" id="courseFormtrigger3" aria-controls="test-l-3" aria-selected="false">
+
+              </button>
+            </div>
+
+            <div class="step" data-target="#test-l-4">
+              <button type="button" class="step-trigger visually-hidden" role="tab" id="courseFormtrigger4" aria-controls="test-l-4" aria-selected="false">
+
+              </button>
+            </div>
+            <div class="step" data-target="#test-l-5">
+              <button type="button" class="step-trigger visually-hidden" role="tab" id="courseFormtrigger5" aria-controls="test-l-5" aria-selected="false">
+
+              </button>
+            </div>
+          </div>
+          <form onsubmit="return false">
+            <!-- Content one -->
+            <div id="test-l-1" role="tabpanel" class="bs-stepper-pane fade active dstepper-block">
+              <div class="card mb-4">
+
+
+
+                <!-- Card body -->
+                <div class="card-body">
+
+                  <!-- quiz -->
+                  <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                    <div class="d-flex align-items-center">
+                      <!-- quiz img -->
+                      <a href="#"> <img src="../assets/images/course/course-react.jpg" alt="course" class="rounded img-4by3-lg"></a>
+                      <!-- quiz content -->
+                      <div class="ms-3">
+                        <h3 class="mb-0"><a href="#" class="text-inherit">React Basic Quiz </a></h3>
+
+                      </div>
+                    </div>
+                    <div>
+                      <span class="text-danger"><i class="fe fe-clock me-1 align-middle"></i>00:05:55</span>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <!-- text -->
+                    <div class="d-flex justify-content-between">
+                      <span>Exam Progress:
+                      </span>
+                      <span> Question 1 out of 5</span>
+                    </div>
+                    <!-- progress bar -->
+                    <div class="mt-2">
+                      <div class="progress" style="height: 6px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- text -->
+                  <div class="mt-5">
+                    <span>Question 1</span>
+                    <h3 class="mb-3 mt-1">React is mainly used for building ___.</h3>
+                    <!-- list group -->
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action " aria-current="true">
+                        <!-- form check -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label stretched-link" for="flexRadioDefault1">
+                            Database
+                          </label>
+                        </div>
+                      </div>
+                      <!-- list group -->
+                      <div class="list-group-item list-group-item-action">
+                        <!-- form check -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label stretched-link" for="flexRadioDefault2">
+                            Connectivity
+                          </label>
+                        </div>
+                      </div>
+                      <!-- list group -->
+                      <div class="list-group-item list-group-item-action">
+                        <!-- form check -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                          <label class="form-check-label stretched-link" for="flexRadioDefault3">
+                            User interface
+                          </label>
+                        </div>
+                      </div>
+                      <!-- list group -->
+                      <div class="list-group-item list-group-item-action">
+                        <!-- form check -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                          <label class="form-check-label stretched-link" for="flexRadioDefault4">
+                            Design Platform
+                          </label>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              <!-- Button -->
+              <div class="mt-3 d-flex justify-content-end">
+                <button class="btn btn-primary " onclick="courseForm.next()">
+                  Proceed <i class="fe fe-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
